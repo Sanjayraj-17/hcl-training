@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <h2>Student Management</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    
+    <section id="home" class="container">
+        <h2>Student Management System</h2>
+
+        <input type="number" id="roll" placeholder="Roll Number">
+        <input type="text" id="name" placeholder="Student Name">
+        <input type="text" id="dept" placeholder="Department">
+
+        <br><br>
+
+        <button onclick="insertStudent()">Insert</button>
+        <button onclick="updateStudent()">Update</button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Roll Number</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="studentTable"></tbody>
+        </table>
+    </section>
+
+    
+
+    
+
+    <footer>
+        <p>© 2026 Student Management System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
